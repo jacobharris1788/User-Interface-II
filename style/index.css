@@ -1,1 +1,236 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Custom Styling */
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+    background:none;
+    color:white;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    transition:.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(140, 203, 255, 0.3);
+    transition:.2s;
+    
+}
+
+/* Header */
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    position: fixed;
+    top:0;
+    width:100%;
+    overflow:hidden;
+    z-index: 1;
+}
+
+.titleandnav {
+    display: flex;
+    justify-content: space-around;
+    align-content:center;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.topnav a {
+    font-size: .8em;
+    padding:1rem 3rem;
+    text-transform:uppercase;
+    color:black;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid black;
+    transition:.2s;
+    text-decoration:none;
+}
+
+#home {
+    background-color:rgb(0, 0, 0);
+    color: white;
+}
+
+.topnav a:hover {
+    background-color:rgba(140, 203, 255);
+    transition:.5s;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: auto 0;
+}
+
+
+
+
+
+
+/* Content */
+
+.hero {
+    width: 100%;
+    margin: 80px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 50vh;
+    justify-content:center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.herotext {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}
+
+#bighero {
+    font-weight: 600;
+    color: rgb(140, 203, 255);
+}
+
+.herobutton {
+    padding: .5rem 1.8rem;
+    margin: 28px;
+}
+
+
+.projectsgallery {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.projectsgallery .container {
+    width:22em;
+    padding-bottom: 1rem;
+    margin-bottom: 2%;
+}
+
+.projectsgallery img {
+    width: 100%;
+    transition:.3s;
+}
+
+.projectsgallery img:hover{
+    opacity: 0.5;
+    transition: .3s;
+}
+
+.projecttext {
+    text-align: center;
+    font-size: 1.3rem;
+    color:black;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+}
+
+footer .contact {
+    padding: .5rem 1.5rem;
+    margin: 3em 0 1.5em;
+}
+
+.social {
+    display:flex;
+    
+}
+
+.fab {
+    color:rgba(140, 203, 255);
+    font-size: 3em;
+    margin: 0 2rem 1.5rem;
+    transition:.4s;
+    cursor: pointer;
+}
+
+.fab:hover {
+    color: white;
+    transition:.4s;
+
+}
+
+h3 {
+    color:rgb(108, 160, 202);
+    margin-bottom: 4rem;
+}
