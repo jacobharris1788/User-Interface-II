@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jacob Harris - Portfolio</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/206d9064d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <div class="titleandnav">
+            <h1 class="title">
+                Jacob Harris
+            </h1>
+            <nav class="topnav">
+                <a id="home" href="/index.html">Home</a>
+                <a id="about" href="/about.html">About</a>
+                <a id="contact" href="/contact.html">Contact</a>
+                <a id="projects" href="/projects.html">Projects</a>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="hero">
+            <h1 class="herotext">
+                Hello, I'm <span id="bighero">Jacob Harris</span>.<br>
+                I'm a student full-stack web developer.
+            </h1>
+            <button class="herobutton" onclick="window.location.href='/projects.html';">
+                My Projects
+            </button>
+        </div>
+
+        <div class="projectsgallery">
+            <div class="container">
+                <img src="https://images.pexels.com/photos/1697368/pexels-photo-1697368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                <h2 class="projecttext">
+                    Title of A
+                </h2>
+            </div>
+            <div class="container">
+                <img src="https://images.pexels.com/photos/238480/pexels-photo-238480.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <h2 class="projecttext">
+                    Project Might
+                </h2>
+            </div>
+            <div class="container">
+                <img src="https://images.pexels.com/photos/2531551/pexels-photo-2531551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <h2 class="projecttext">
+                    Go Here Eventually
+                </h2>
+            </div>
+            <div class="container">
+                <img src="https://images.pexels.com/photos/698275/pexels-photo-698275.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <h2 class="projecttext">
+                    Cool Thing
+                </h2>
+            </div>
+            <div class="container">
+                <img src="https://images.pexels.com/photos/2387327/pexels-photo-2387327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <h2 class="projecttext">
+                    Fun Thing
+                </h2>
+            </div>
+            <div class="container">
+                <img src="https://images.pexels.com/photos/1374493/pexels-photo-1374493.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <h2 class="projecttext">
+                    Spicy Thing
+                </h2>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <button class="contact" onclick="window.location.href='/contact.html';">
+            Contact Me
+        </button>
+        <div class="social">
+            <i class="fab fa-linkedin" onclick="window.location.href='https://www.linkedin.com/in/jacob-harris-8ab6481a3/';"></i>
+            <i class="fab fa-github-square" onclick="window.location.href='https://github.com/jacobharris1788';"></i>
+            <i class="fab fa-facebook-square" onclick="window.location.href='https://www.facebook.com/jacob.harris.3152';"></i>
+        </div>
+        <h3 class="copyright">
+            Jacob Harris &#169;2020
+        </h3>
+    </footer>
 </body>
 </html>
