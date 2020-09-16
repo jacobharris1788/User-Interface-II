@@ -132,7 +132,7 @@ header {
 
 .hero {
     width: 100%;
-    margin: 80px auto;
+    margin: 6vh auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     height: 50vh;
@@ -162,7 +162,7 @@ header {
 
 .herobutton {
     padding: .5rem 1.8rem;
-    margin: 28px;
+    margin: 1.5rem;
 }
 
 
@@ -233,4 +233,66 @@ footer .contact {
 h3 {
     color:rgb(108, 160, 202);
     margin-bottom: 4rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 870px) {
+    header {
+        position: initial;
+    }
+
+    .hero {
+        margin: 0 0 1rem;
+        height: 20rem;
+    }
+    
+    .titleandnav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 4em;
+        padding: .3em;
+    }
+
+    .topnav {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 25vw;
+    }
+
+    .topnav a {
+        padding:1rem .5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .topnav {
+        font-size: .7rem;
+        width: 30vw;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .hero {
+        height: 10rem;
+    }
+
+    .herotext {
+        font-size: 1rem;
+    }
+
+    .herobutton {
+        font-size: .5rem;
+        padding: .5rem 1rem;
+        margin: .5rem;
+        border-width: 1px;
+    }
 }
